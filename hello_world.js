@@ -5,6 +5,10 @@ if (Meteor.isClient) {
   Template.hello.helpers({
     counter: function () {
       return Session.get('counter');
+    },
+    helloString:function(name){
+      
+      return HelloWorld.sayHello(name);
     }
   });
 
