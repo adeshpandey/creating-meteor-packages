@@ -12,7 +12,9 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
+  api.export('HelloWorld');
   api.addFiles('hello-world.js');
+
 });
 
 Package.onTest(function(api) {
